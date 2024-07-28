@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+   /*1- select p elements and make them red   */
+/* p{
+    color:red;
+}  */
+  /* 2- select p and div elements  */
+  /* div p{
+    color: aqua;
+  } */
+
+  /* 3- select p with class mainClass direct child for div with id myDiv and make it styled 
+   */
+   /* #myDiv .mainclass{
+    color: brown;
+   } */
+   /* 4- select all p inside div and style them  */
+    /* div>p{
+    color:red
+} */
+/* - select input with type text element with class myClass  */
+    /* [text']{
+color: green;
+} */
+/* 6- select span elements after div  */
+/* div~span{
+    color: yellow;
+} */
+
+
+.mergimg{
+    border:1px solid;
+    width: 500px; 
+    height: 400px; 
+    background-image: url('2.png'), url('3.jpg'), url('1.jpg');
+    background-blend-mode: multiply;
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    filter: hue-rotate(20deg);
+
+}
+  
+/* 
+   .MAINDIV{
+width: 500px;
+margin: 200px auto;
+border: 1px solid black;
+
+   }
+   h1{
+    color: rgb(243, 126, 228);
+    border-bottom: dotted purple 10px;
+
+   }
+.job-title{
+    font-weight: 100;
+    color: rgb(177, 172, 172);
+}
+.contactdiv{
+    border: 3px solid purple;
+    background: rgb(202, 196, 196);
+    
+} */
+  </style>
+  
+<body>
+    <!-- first task -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisic</p>
+    <div>
+        <p>loremmm text</p>
+    </div>
+    <div id="myDiv"><p class="mainclass">select p with class mainClass direct child for div with id myDiv and make it styled </p></div>
+    <input type="text" class="myClass"  placeholder="name">
+    <br>
+    <span class="spanafterdiv">this is span after div</span>
+    <p class="myClass">p with class Myclass</p>
+    <div class="mergimg">
+
+      </div>
+    
+      <!-- sec task -->
+
+<!-- <div class="MAINDIV">
+<h1>jane doe</h1>
+<div class="job-title">web developer</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae magnam reprehenderit vel illo commodi deserunt nihil maiores eius ipsa! A sunt neque nihil eligendi debitis, omnis eos. Ullam, ab? </p>
+<p>
+    a small riveer ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti nemo culpa omnis, minima alias, debitis nihil illo neque facilis recusandae assumenda perspiciatis distinctio aspernatur laboriosam ratione expedita dolor accusamus.
+</p>
+<h2> <i>contact information</i></h2>
+<div class="contactdiv">
+<ul>
+    <li><b>email</b><a href="mailjane@example.com">jang@example.com</a></li>
+    <li><b>web</b><a href="#123">http://example.com</a></li>
+    <li><b>tel:</b>010211521521</li>
+</ul>
+
+</div>
+</div> -->
+
+
+
+
+
+</body>
+</html>
