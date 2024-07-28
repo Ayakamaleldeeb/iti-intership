@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my website very easy">
+    <meta name="keyword" content="html,css,js">
+    <title>mypage</title>
+</head>
+<body>
+
+    <!-- hiiii
+   <h1>hello</h1>
+   <h2>hello2</h2>
+   <h3>hello3</h3>
+   <h4>hello4</h4>
+   <h5>hello5</h5>
+   <h6>hello6</h6> -->
+<!-- 
+   <p>hello</p>
+   <p>hiiii</p> -->
+
+   <!-- <span>hiiii</span>
+   <span>hello</span> -->
+
+   <!-- <div>
+    hiiii
+   </div>
+   <div>hello</div> -->
+   <!-- <font color="red"><p>hiiii</p></font> -->
+   <!-- <p><font color="red">myfont</font></p> -->
+   <!-- <font size="7" color="red" face="arial">hiii</font> -->
+    <!-- <pre>
+        <p>
+            hiiii
+
+
+
+
+
+
+            hello
+        </p>
+    </pre>
+   -->
+ 
+  <!-- <ul type="bullet">
+    <li>html</li>
+    <li>css</li>
+    <li>
+        js
+         <ul>
+            <li>node js</li>
+            <li>react</li>
+         </ul>
+    </li>
+  </ul> -->
+  <!-- <ol type="a" start="3" reversed>
+    <li>html</li>
+    <li>css</li>
+    <li>js</li>
+    <li>js</li>
+    
+  </ol> -->
+
+  <!-- <dl>
+    <dt>myLists</dt>
+    <dd>html</dd>
+    <dd>css</dd>
+    <dd>js</dd>
+  </dl> -->
+  <!-- <img src="images/downloa.jpg" alt="background"/> -->
+  <!-- <a href="http://www.google.com" target="_self">click</a> -->
+   <!-- <a href="mailto:hala12@gmail.com">click</a> -->
+    <!-- <a href="Home.html">click</a>
+    <a href="myContactUsFolder/contact.html">contact</a> -->
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d880797.3350912909!2d33.70433324999999!3d30.41867495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f94573a082a7f5%3A0x7b9da6462dc9ce29!2sNorth%20Sinai%20Governorate!5e0!3m2!1sen!2seg!4v1719912939896!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+     <!-- <span><b>hello</b></span>
+     <br/>
+     <hr/>
+     <span><i>hiiii</i></span>
+     <span><strong>hello</strong></span> -->
+      <!-- <table border="1">
+        <thead>
+           <tr>
+            <th>Name</th>
+            <th>Address</th>
+           </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <td><img src="images/download.jpg" alt=""></td>
+             <td>alrish</td>
+           </tr>
+           <tr>
+             <td>ayah</td>
+             <td>cairo</td>
+           </tr>
+           <tr>
+              <td>Mohamed Elbeek</td>
+              <td>Al arish</td>
+           </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Names</td>
+            <td>Adresses</td>
+          </tr>
+        </tfoot>
+      </table>
+
+ -->
+
+
+ <table border="1" width="400">
+  <caption>my table</caption>
+  <thead>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td height="200" valign="bottom">Ali</td>
+      <td align="right" valign="bottom">Omar</td>
+      <td>Sinai</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="3">subject</td>
+      <td>front end</td>
+    </tr>
+    <tr>
+      <td>backend</td>
+    </tr>
+    <tr>
+      <td>Flutter</td>
+    </tr>
+  </tbody>
+ </table>
+
+ <table border="1" width="100%">
+   <thead>
+     <tr><img src="images/download.jpg" width="100%"/></tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td align="center" colspan="2">HELLo my Website</td>
+    </tr>
+    <tr>
+      <td><img src="images/download.jpg"/></td>
+      <td><img src="images/download.jpg"/></td>
+    </tr>
+   </tbody>
+ </table>
+
+
+    <!-- <a href="#downPage">down</a>
+     
+
+
+
+     
+    <pre>
+
+
+
+
+
+    </pre>
+    <span id="downPage">down</span> -->
+
+
+
+
+</body>
+</html>
