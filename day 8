@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frames task responsive</title>
+</head>
+<style>
+    body {
+        margin:0 ;
+     
+        background-color: #ffffff;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+      }
+  
+      .navbar__logo {
+        justify-self: start;
+      }
+  
+      .navbar__logo img {
+        max-width: 100px;
+      }
+  
+      .navbar__menu {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1rem;
+      }
+  
+      .navbar__menu-item {
+        list-style-type: none;
+      }
+  
+      .navbar__menu-item a {
+        text-decoration: none;
+        color: #fff;
+      }
+  
+      .navbar__toggle {
+        display: none;
+        justify-self: end;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+  
+      @media (max-width: 768px) {
+        .navbar__menu {
+          display: none;
+          grid-auto-flow: row;
+          grid-template-columns: 1fr;
+  
+        }
+  
+        .navbar__toggle {
+          display: block;
+        }
+  
+        .navbar__menu.show {
+          display: grid;
+         
+        }
+      }
+
+    
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        gap: 10px;
+    }
+    
+    .header {
+        grid-row: 1 / 2;
+        background-color: #c2185b;
+    }
+    
+    .content {  
+        grid-row: 2 / 4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    
+    .box {
+        background-color: #e91e63;
+    }
+
+    .box1 {
+        grid-column: 1 / 2;
+    }
+
+    .box2 {
+        grid-column: 2 / 3;
+    }
+
+    .box3 {
+        grid-column: 3 / 4;
+    }
+
+    .box4 {
+        grid-column: 4 / 5;
+    }
+
+    .box5 {
+        grid-column: 1 / 3;
+    }
+
+    .box6 {
+        grid-column: 3 / 5;
+    }
+
+    .box8 {
+        grid-column: 1 / 5;
+    }
+
+
+    @media screen and (max-width:760px) {
+        .box1 {
+            grid-column: 1 / 3;
+        }
+        .box2 {
+            grid-column: 3 /5;
+        }
+        .box3 {
+            grid-column: 1 / 3;
+        }
+    
+        .box4 {
+            grid-column: 3 / 5;
+        }
+        .box5 ,.box6{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+    }
+
+
+    @media screen and (max-width:425px) {
+        .box1 {
+            grid-column: 1 /5;
+        }
+        .box2 {
+            grid-column: 1/5;
+        }
+        .box3 {
+            grid-column: 1/5;
+        }
+    
+        .box4 {
+            grid-column:1/5;
+        }
+        .box5{
+            grid-column:1/5;
+
+        }
+    }
+
+
+
+
+
+
+
+    
+</style>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="./logo.webp" alt="Logo">
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu-item"><a href="#">Home</a></li>
+          <li class="navbar__menu-item"><a href="#">About</a></li>
+          <li class="navbar__menu-item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar__toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="header"></div>
+        <div class="content">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box8"></div>
+    
+        </div>
+    </div>
+
+
+
+
+    
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+  <script>
+    const toggle = document.querySelector('.navbar__toggle');
+    const menu = document.querySelector('.navbar__menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
+  ///////////////////////////
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 10px;
+            justify-content: center; 
+        }
+        .project {
+            box-sizing: border-box;
+            border: none;
+            flex: 1 1 calc(25% - 20px);
+            background: rgba(233, 245, 245, 0.864);
+            max-width: calc(25% - 20px); 
+        }
+        .headp ,.smallp ,span{
+            margin-left: 2rem;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .headp {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px; 
+        }
+        .smallp {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+      
+        span {
+            display: block; 
+            margin-top: 5px; 
+        }
+        @media (max-width: 1024px) {
+            .project {
+                flex: 1 1 calc(50% - 20px); 
+                max-width: calc(50% - 20px); 
+            }
+        }
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 calc(100% - 20px); 
+                max-width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="project">
+            <img src="/free courses/1.jpg" alt="Project Image">
+            <p class="headp">Social Media</p>
+            <p class="smallp">Lorem ipsum dolor sit amet, consectetur</p>
+            <span>40 Courses</span>
+        </div>
+        <div class="project">
+            <img src="/free courses/1.jpg" alt="Project Image">
+            <p class="headp">Social Media</p>
+            <p class="smallp">Lorem ipsum dolor sit amet, consectetur</p>
+            <span>40 Courses</span>
+        </div>
+        <div class="project">
+            <img src="/free courses/1.jpg" alt="Project Image">
+            <p class="headp">Social Media</p>
+            <p class="smallp">Lorem ipsum dolor sit amet, consectetur</p>
+            <span>40 Courses</span>
+        </div>
+        <div class="project">
+            <img src="/free courses/1.jpg" alt="Project Image">
+            <p class="headp">Social Media</p>
+            <p class="smallp">Lorem ipsum dolor sit amet, consectetur</p>
+            <span>40 Courses</span>
+        </div>
+    </div>
+</body>
+</html>
+      ///
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Grid</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .navbar__logo {
+      justify-self: start;
+    }
+
+    .navbar__logo img {
+      max-width: 100px;
+    }
+
+    .navbar__menu {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 1rem;
+    }
+
+    .navbar__menu-item {
+      list-style-type: none;
+    }
+
+    .navbar__menu-item a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .navbar__toggle {
+      display: none;
+      justify-self: end;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar__menu {
+        display: none;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+
+      }
+
+      .navbar__toggle {
+        display: block;
+      }
+
+      .navbar__menu.show {
+        display: grid;
+       
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="./logo.webp" alt="Logo">
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu-item"><a href="#">Home</a></li>
+      <li class="navbar__menu-item"><a href="#">About</a></li>
+      <li class="navbar__menu-item"><a href="#">Contact</a></li>
+    </ul>
+    <div class="navbar__toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+  <script>
+    const toggle = document.querySelector('.navbar__toggle');
+    const menu = document.querySelector('.navbar__menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
