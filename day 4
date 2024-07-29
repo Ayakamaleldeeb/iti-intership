@@ -1,0 +1,78 @@
+// var height = 5;
+// for (var i = 1; i <= height; i++) {
+//     var stars = "";
+//     for (var j = 1; j <= i; j++) {
+//         stars += "*";
+//     }
+//     console.log(stars);
+// }
+
+
+
+
+
+
+// 1-Write a program to find even and odd number from 1 to 10 
+// for (var i = 1; i <= 10; i++) {
+//     if (i % 2 === 0) {
+//       console.log( i+ " even number");
+//     } else {
+//       console.log(i + " odd number");
+//     }
+//   }
+
+
+
+
+////2- student grade 78 display message excellent if the grade in range 100 and 85
+//// display message very good if the grade in range 84 and 75
+//// display message good if the grade in range 74 and 65
+//// display message bad if the grade less than 64 
+
+// var grade = 78;
+// if (grade >= 85 && grade <= 100) {
+//   console.log("Excellent");
+// } else if (grade >= 75 && grade <= 84) {
+//   console.log("Very good");
+// } else if (grade >= 65 && grade <= 74) {
+//   console.log("Good");
+// } else if (grade < 65) {
+//   console.log("Bad");
+// }
+
+
+//using another way
+
+var grade=50;
+var message=grade >= 85 && grade <= 100 ? "Excellent" :grade >= 75 && grade <= 84 ? "Very Good" :grade >= 65 && grade <= 74?"Good":"Bad";
+console.log(message);
+
+
+
+
+
+
+
+
+//// 3 -if day Sunday or Monday display to user this is course html
+////     if day Tuesday or wednesday display to user this is course css
+//// if day thursday  display to user this is course js
+//// Else display holiday
+
+
+// var day = "sunday";
+// switch (day) {
+//   case "sunday":
+//   case "monday":
+//     console.log("This is the HTML course.");
+//     break;
+//   case "tuesday":
+//   case "wednesday":
+//     console.log("This is the CSS course.");
+//     break;
+//   case "thursday":
+//     console.log("This is the JavaScript course.");
+//     break;
+//   default:
+//     console.log("Holiday");
+// }
